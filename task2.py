@@ -1,30 +1,30 @@
+listInputdata = [123, 2.234, 3.5, 4, 243]
 
-#list med data
-listInputdata = [1,2,3.5,4,5]
-
+#casts the list to flot
 listCastedToFloat = [float(i) for i in listInputdata]
-print(listInputdata)
 
-def jainsall():
-    sumAvListen = sum(listCastedToFloat)
-    n = len(listCastedToFloat)
-    JFIOppe = ((sumAvListen) ** 2)
+#___TOP PART OF CALCULATION______
 
-    JFINede = (n * (t1 ** 2 + t2 ** 2)
-    i = 1
-    while i < n:
+#SUM THE LIST
+sumNummer = sum(listCastedToFloat)
 
-    for i in listCastedToFloat
-
-    print(JFI)
-
-print(type(listCastedToFloat[1]))
-jainsall()
+#POWER 2 THE SUM OF THE LIST
+JFIoppe = sumNummer**2
 
 
-def jainsall1():
-    for i in listCastedToFloat:
-        print("test")
+#BOTTOM PART OF CALCULATION_____
 
+#-- makes the bottom of the formula to power (2)
+def turn_to_power(list, power=2):
+    return [number**power for number in list]
+opphoyd = turn_to_power(listCastedToFloat)
 
+#Sums the list after power
+sumOpphoyd = sum(opphoyd)
 
+#--- mulitplies the list in power with N
+JFInede = sumOpphoyd*len(listCastedToFloat)
+
+#DIVIDES THE TOP WITH THE BOTTOM______
+finalJFI = JFIoppe/JFInede
+print("JMI is ",finalJFI)
